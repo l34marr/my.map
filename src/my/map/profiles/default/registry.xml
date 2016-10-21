@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.resources/my-map-view"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++resource++my.map/ch01.css</element>
+    </value>
+    <value key="js">++resource++my.map/ch01.js</value>
+  </records>
+
+</registry>

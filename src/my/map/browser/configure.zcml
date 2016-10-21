@@ -17,4 +17,12 @@
       directory="static"
       />
 
+  <browser:page
+      name="map-view"
+      for="*"
+      layer="my.map.interfaces.IMyMapLayer"
+      template="map-view.pt"
+      permission="zope2.View"
+      />
+
 </configure>

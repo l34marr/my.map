@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="my.map">
+
+<metal:styleslot fill-slot="style_slot">
+<link rel="stylesheet" href="++resource++my.map/ol.css" type="text/css" />
+<link rel="stylesheet" href="++resource++my.map/ch01.css" type="text/css" />
+</metal:styleslot>
+<metal:javascriptslot fill-slot="javascript_head_slot">
+<script type="text/javascript" src="++resource++my.map/ol.js"></script>
+<script type="text/javascript" src="++resource++my.map/ch01.js"></script>
+</metal:javascriptslot>
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core">
+
+<h2 i18n:translate="">Map View</h2>
+
+    <div id="map" class="map"></div>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
